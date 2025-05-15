@@ -62,8 +62,8 @@ class FlagScatterPlot:
         max_dy = max(abs(y - center_y) for y in y_vals)
     
         # Set symmetric limits around (0, 100)
-        xlim = (-max_dx, max_dx)
-        ylim = (center_y - max_dy, center_y + max_dy)
+        xlim = (-80,80)#max_dx, max_dx)
+        ylim = (20,180)#center_y - max_dy, center_y + max_dy)
         ax.set_xlim(xlim)
         ax.set_ylim(ylim)
     
