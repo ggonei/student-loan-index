@@ -91,3 +91,10 @@ print(f"{'Rank':<5} {'Country':<40} {'BM Δ%':>10} {'2526 vs UK%':>12}")
 print("-" * 70)
 for i, (country, bm_pct, pct_vs_uk) in enumerate(big_mac_countries, start=1):
     print(f"{i:<5} {country:<40} {bm_pct:10.2f} {pct_vs_uk:12.2f}")
+
+
+from countryplotter import FlagScatterPlot
+
+plotter = FlagScatterPlot()
+plotter.plot(big_mac_countries, title="Big Mac Index vs UK-relative Thresholds")
+
